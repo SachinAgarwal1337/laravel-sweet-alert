@@ -1,0 +1,40 @@
+{
+    "name": "skagarwal/laravel-sweet-alert",
+    "description": "Sweet Alert with Laravel",
+    "type": "library",
+    "keywords": [
+        "Sweet Alert",
+        "Laravel Sweet Alert",
+        "Sweet Alert Laravel"
+    ],
+    "time": "2018-05-01",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sachin Agarwal",
+            "email": "sachinkumaragarwal05@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "SKAgarwal\\SweetAlert\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SKAgarwal\\SweetAlert\\ServiceProvider"
+            ],
+            "aliases": {
+                "GooglePlaces": "SKAgarwal\\SweetAlert\\Facade"
+            }
+        }
+    }
+}
