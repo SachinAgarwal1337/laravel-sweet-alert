@@ -23,10 +23,10 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '../views/', 'sweet-alert');
+        $this->loadViewsFrom(__DIR__ . '/../views/', 'sweet-alert');
         
         $this->publishes([
-            __DIR__ . '../views' => resource_path('views/vendor/sweet-alert'),
+            __DIR__ . '/../views' => resource_path('views/vendor/sweet-alert'),
         ]);
     }
 }
